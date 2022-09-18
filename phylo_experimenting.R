@@ -7,7 +7,7 @@ all_species <- read.csv("data/species_table.csv")
 
 random_species <- sample_n(all_species, sample(3:10, 1))
 
-original_phylo <- tol_induced_subtree(random_species$ott_id, label_format = "id")
+rtol_phylo <- tol_induced_subtree(random_species$ott_id)
 
 my_phylo <- original_phylo
 
